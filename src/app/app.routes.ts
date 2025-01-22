@@ -10,10 +10,10 @@ export const routes: Routes = [
     title: 'TOS Terminal Interface',
     component: TerminalComponent,
   },
-  {
-    path: 'registry',
-    title: 'TOS Registry Interface',
-    component: RegistryComponent,
-  },
+  // {
+  //   path: 'registry',
+  //   title: 'TOS Registry Interface',
+  //   component: RegistryComponent,
+  // },
   { path: '', redirectTo: '/index', pathMatch: 'full' },
 ];
