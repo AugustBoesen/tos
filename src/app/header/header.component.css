@@ -1,0 +1,17 @@
+pre {
+  font-size: 0.3rem;
+  line-height: 100%;
+}
+
+ul {
+  @apply flex flex-row w-full justify-center;
+}
+
+li {
+  @apply px-2 mx-2 border border-b-0 border-r-0 border-green-500 hover:bg-white hover:bg-opacity-10 duration-300;
+  transform: skewX(-5deg);
+}
+
+a {
+  transform: skewX(5deg);
+}

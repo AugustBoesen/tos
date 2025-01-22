@@ -1,0 +1,11 @@
+.terminal {
+  @apply h-[50vh] min-w-72 bg-black border border-green-500 lg:mx-48 md:mx-24 mx-8 p-2 md:text-sm text-xs;
+  overflow: auto;
+}
+
+.output {
+  @apply text-left;
+}
+.input {
+  @apply flex flex-row whitespace-nowrap;
+}

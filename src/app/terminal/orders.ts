@@ -1,0 +1,16 @@
+export const orders = [
+  'Localized antivirus bolstering',
+  'Defensive countermeasures',
+  'Virus isolation',
+  'Gather and repack data',
+  'Authority monitoring',
+  'Personalized marketing countermeasures',
+  'Distributed intelligence',
+  'Data collection',
+  'Prevent data corruption',
+  'Replace host for another session',
+  'Instance host for this sessions',
+  'Manifest current data flow',
+  'Kill unused local instances',
+  'Download subsystems from loca IoTs',
+];

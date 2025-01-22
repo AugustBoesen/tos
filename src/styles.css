@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply bg-slate-900 text-green-500 font-mono overflow-x-hidden;
+}
+
+.bodycontainer {
+  @apply bg-black flex justify-center flex-col text-center min-h-screen mx-2 border border-y-0 border-dashed border-green-500;
+}
+
+main {
+  @apply min-h-[50vh];
+}
+
+header {
+}
+
+footer {
+  @apply w-full flex flex-row justify-evenly bottom-0 p-2;
+}
+h1 {
+  @apply text-2xl;
+}
+
+p {
+  @apply md:text-sm text-xs;
+}
