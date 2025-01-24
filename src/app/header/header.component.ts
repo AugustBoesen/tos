@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 export class HeaderComponent {
   navItems = [
     { name: 'Home', link: '/' },
-    { name: 'Terminal', link: '/terminal' },
+    { name: 'OPEN TERMINAL', link: '/terminal' },
     // { name: 'Registry', link: '/registry' },
   ];
 

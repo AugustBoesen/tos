@@ -17,7 +17,6 @@ export function handleCommand(this: any, input: string) {
       'clear - Clear the terminal screen.',
       'dtc - displays current flow of data for inspection.',
       'access [filename] - access a transferable file in the system cache.',
-      'download [filename] - download a transferable file from the system cache.',
       'lsfiles - list all transferable files in the system cache.',
       'version - Displays the current version of of the global cache system.',
       '_________________________________________________________________',
@@ -46,28 +45,26 @@ export function handleCommand(this: any, input: string) {
   }
   if (words[0] === 'access') {
     if (words[1] === 'radio') {
-      window.open('https://www.youtube.com/watch?v=XM8bbRA3qio');
-    } else {
+      window.open('https://docs.google.com/document/d/1__aRQ3oSOYtnFicx_exKSvGJ5c3r6m-Q36BvU4rV-0g/edit?usp=sharing');
+    } 
+    if (words[1] === 'gale') {
+      output = ['Downloading file...'];
+      window.open(
+        'https://docs.google.com/document/d/1w7FC4MrCOJAQVA7XH3-2QTGYRgUy0lNcW6mVunToyZs/edit?usp=sharing'
+      );
+    } 
+    else {
       output = ['You do not have access to that file.'];
     }
   }
 
   if (words[0] === 'lsfiles') {
-    output = ['gale', 'radio'];
+    output = ['gale', 'hunter', 'belmont', 'DIM_NEUTRALIZED', 'DIM_NEUTRALIZED2', 'havu', 'radio'];
   }
 
   // DOWNLOAD FROM DRIVE USING OUTPUT LINK GEN
   // https://sites.google.com/site/gdocs2direct/
-  if (words[0] === 'download') {
-    if (words[1] === 'gale') {
-      output = ['Downloading file...'];
-      window.open(
-        'https://drive.google.com/uc?export=download&id=1M0HMtpSqJZ-qYvD-co_z244TEdpA0FWM'
-      );
-    } else {
-      output = ['You do not have access to that file.'];
-    }
-  }
+
   if (input === 'clear') {
     command = 'this.output = [];';
     output = ['Output history cleared.'];
@@ -84,6 +81,7 @@ export function handleCommand(this: any, input: string) {
 
     //  Choose 2 random countries for country1 and country2
     const country1 = countries[Math.floor(Math.random() * countries.length)];
+
     const country2 = countries[Math.floor(Math.random() * countries.length)];
 
     //  Choose 1 random order from orders list for order
