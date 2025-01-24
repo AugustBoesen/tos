@@ -17,7 +17,7 @@ export class TerminalComponent {
     '[DTCache] Initializing system interface...',
     '[DTCache] System initialized. type "help" for a list of commands.',
   ];
-  user: string = 'seward';
+  user: string = 'elaine';
   terminal: any = document.getElementById('input');
 
   Enter() {
