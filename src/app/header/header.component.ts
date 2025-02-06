@@ -11,6 +11,7 @@ export class HeaderComponent {
   navItems = [
     { name: 'Home', link: '/' },
     { name: 'OPEN TERMINAL', link: '/terminal' },
+    { name: 'Kjb42l.chat', link: '/log2394873249857329847' },
     // { name: 'Registry', link: '/registry' },
   ];
 
